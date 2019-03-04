@@ -1,18 +1,69 @@
+
 .App {
   text-align: center;
+  background: whitesmoke;
+  height: 100vh;
 }
 
-.loseOverlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: hsla(0, 0, 0, .9);
+.displayedWord {
+  font-size: 4rem;
+  margin: 0;
+  color: crimson;
+}
+
+.title {
+  font-family: 'Palanquin', sans-serif;
+  margin: 0;
+  margin-bottom: 5%;
+  font-size: 3rem;
+}
+
+.ram {
+  font-family: 'Rock Salt', cursive;
+  font-size: 6rem;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.stats {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.2rem;
+}
+
+.score,
+.lives {
+  margin: 0 10%;
+  margin-bottom: 2%;
+}
+
+ul {
+  margin-top: 4%;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width:830px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width:480px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width:450px) {
+  html {
+    font-size: 55%;
+  }
 }
